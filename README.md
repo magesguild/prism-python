@@ -19,12 +19,13 @@ Provides zero-dependency access to microsecond scientific arithmetic, complex li
 
 ---
 
-## ⚡ Public Trial Access Notice
+## ⚡ Public Trial Access & Production Transition Notice
 
-> **Public Trial Mode Active:** Until **Friday, November 27, 2026 at 23:59:59 UTC**, Project PRISM's cloud evaluation endpoints are accessible **without authentication** for circuits up to **75 qudits**.
+> **Public Evaluation Period Active:** Until **Friday, November 27, 2026 at 23:59:59 UTC**, Project PRISM's cloud evaluation endpoints are accessible **100% unauthenticated** for circuits up to **75 qudits**.
 > 
-> * No API key required for public trial evaluation.
-> * Zero installation prerequisites (uses Python standard library).
+> * **Zero API Key Required:** Instant unauthenticated access during the public trial.
+> * **Production Transition:** On Friday, November 27 at Midnight UTC, the open evaluation window concludes and authenticated commercial production access begins.
+> * **Upcoming SDK Updates:** This SDK will receive updates leading up to and upon commercial launch, adding authenticated API key provisioning (`api_key="mgp_live_..."`), expanded production qudit scale (150 to 1,000+ qudits), priority batch scheduling, and webhook result delivery. Pipelines built with this SDK during the trial will transition seamlessly by simply supplying an API key.
 
 ---
 
