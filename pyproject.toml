@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prism-calc"
+version = "0.1.0"
+description = "Official Python SDK for the Project PRISM Mathematical Engine and Quantum Runtime"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Mage's Guild Psychonautics LLC", email = "licensing@magesguild.io" }
+]
+keywords = [
+    "quantum", "openqasm", "qudits", "quantum-chemistry", "mathematics",
+    "simulation", "project-prism", "hamiltonian", "linear-algebra"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+prism = "prism.cli:main"
+
+[project.urls]
+Homepage = "https://www.magesguild.io"
+Documentation = "https://www.magesguild.io/dev"
+Showroom = "https://www.magesguild.io/calculator"
+Repository = "https://github.com/magesguild/prism-python"
+
+[tool.setuptools.packages.find]
+where = ["src"]
